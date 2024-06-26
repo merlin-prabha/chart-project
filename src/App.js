@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './components/Home';
+import TimeframeSelector from './components/TimeframeSelector';
 
 function App() {
   return (
     <div>
-      <Home />
+      <TimeframeSelector />
     </div>
   );
 }
