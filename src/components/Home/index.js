@@ -44,15 +44,17 @@ const Home = () => {
     return (
         <div className="bg-container">
             <h1 className="main-heading">Charts</h1>
-            <div className="drop-down-container">
-                <label htmlFor="option" className="label">Select the Timeframe</label>
-                <select id="option" className="form-control drop-down" onChange={onChangeSelectOption}>
-                    {dropDownOptions.map(option => (
-                        <option value={option.value}>{option.label}</option>
-                    ))}
-                </select>
+            <div className="customise-large">
+                <div className="drop-down-container">
+                    <label htmlFor="option" className="label">Select the Timeframe</label>
+                    <select id="option" className="form-control drop-down" onChange={onChangeSelectOption}>
+                        {dropDownOptions.map(option => (
+                            <option value={option.value}>{option.label}</option>
+                        ))}
+                    </select>
+                </div>
+                {renderChart()}
             </div>
-            {renderChart()}
         </div>
     )
 }
