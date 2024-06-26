@@ -64,5 +64,5 @@
 
 ### Third-party packages
 
-    Recharts
+    Recharts, React icons
     
