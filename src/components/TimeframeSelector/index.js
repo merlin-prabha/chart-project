@@ -2,8 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import './index.css'
 import Chart from "../Chart";
-import ChartForWeek from "../ChartForWeek";
-import ChartForMonth from "../ChartForMonth";
+
 
 
 const TimeframeSelector  = () => {
@@ -30,6 +29,7 @@ const TimeframeSelector  = () => {
                 </div>
                 <Chart timeframe={timeframe} />
             </div>
+           
         </div>
     )
 }
